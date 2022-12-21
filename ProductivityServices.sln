@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductivityServices.WPF", "ProductivityServices.WPF\ProductivityServices.WPF.csproj", "{529D0DF0-D7D0-4936-996B-7CF4A1E5C020}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductivityServices.WPF", "ProductivityServices.WPF\ProductivityServices.WPF.csproj", "{529D0DF0-D7D0-4936-996B-7CF4A1E5C020}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{74737B4C-7A28-44DA-97C3-0FAB44186170}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductivityServices.ViewModels", "ProductivityServices.ViewModels\ProductivityServices.ViewModels.csproj", "{75AB33FC-80BB-4D28-A701-BC9F2FEC7766}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{7B6DC39B-A225-4458-B186-B7D4D16A4ECA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductivityServices.Factory", "ProductivityServices.Factory\ProductivityServices.Factory.csproj", "{320786AC-49EB-4CD5-9496-544D09BE1507}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductivityServices.DependencyInjection", "ProductivityServices.DependencyInjection\ProductivityServices.DependencyInjection.csproj", "{AF1F7105-1385-4D3D-B93B-AE12C78196CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +25,26 @@ Global
 		{529D0DF0-D7D0-4936-996B-7CF4A1E5C020}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{529D0DF0-D7D0-4936-996B-7CF4A1E5C020}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{529D0DF0-D7D0-4936-996B-7CF4A1E5C020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75AB33FC-80BB-4D28-A701-BC9F2FEC7766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75AB33FC-80BB-4D28-A701-BC9F2FEC7766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75AB33FC-80BB-4D28-A701-BC9F2FEC7766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75AB33FC-80BB-4D28-A701-BC9F2FEC7766}.Release|Any CPU.Build.0 = Release|Any CPU
+		{320786AC-49EB-4CD5-9496-544D09BE1507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{320786AC-49EB-4CD5-9496-544D09BE1507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{320786AC-49EB-4CD5-9496-544D09BE1507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{320786AC-49EB-4CD5-9496-544D09BE1507}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF1F7105-1385-4D3D-B93B-AE12C78196CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF1F7105-1385-4D3D-B93B-AE12C78196CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF1F7105-1385-4D3D-B93B-AE12C78196CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF1F7105-1385-4D3D-B93B-AE12C78196CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{75AB33FC-80BB-4D28-A701-BC9F2FEC7766} = {74737B4C-7A28-44DA-97C3-0FAB44186170}
+		{320786AC-49EB-4CD5-9496-544D09BE1507} = {7B6DC39B-A225-4458-B186-B7D4D16A4ECA}
+		{AF1F7105-1385-4D3D-B93B-AE12C78196CB} = {74737B4C-7A28-44DA-97C3-0FAB44186170}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B74CDA29-8330-4541-AEF7-30AC8F5CD289}

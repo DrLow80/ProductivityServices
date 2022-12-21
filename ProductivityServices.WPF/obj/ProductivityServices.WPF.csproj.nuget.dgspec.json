@@ -4,6 +4,200 @@
     "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.WPF\\ProductivityServices.WPF.csproj": {}
   },
   "projects": {
+    "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj",
+        "projectName": "ProductivityServices.DependencyInjection",
+        "projectPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj",
+        "packagesPath": "C:\\Users\\mmitc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.DependencyInjection\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mmitc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.Factory\\ProductivityServices.Factory.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.Factory\\ProductivityServices.Factory.csproj",
+        "projectName": "ProductivityServices.Factory",
+        "projectPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.Factory\\ProductivityServices.Factory.csproj",
+        "packagesPath": "C:\\Users\\mmitc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.Factory\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mmitc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj": {
+                "projectPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj"
+              },
+              "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj": {
+                "projectPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj",
+        "projectName": "ProductivityServices.ViewModels",
+        "projectPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\mmitc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.ViewModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mmitc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "JetBrains.Annotations": {
+              "target": "Package",
+              "version": "[2022.3.1, )"
+            },
+            "PropertyChanged.Fody": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.WPF\\ProductivityServices.WPF.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -21,12 +215,23 @@
           "net6.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj": {
+                "projectPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj"
+              },
+              "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.Factory\\ProductivityServices.Factory.csproj": {
+                "projectPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.Factory\\ProductivityServices.Factory.csproj"
+              },
+              "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj": {
+                "projectPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -38,6 +243,30 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "CSharpFunctionalExtensions": {
+              "target": "Package",
+              "version": "[2.37.0, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.6.4, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Xaml.Behaviors.Wpf": {
+              "target": "Package",
+              "version": "[1.1.39, )"
+            },
+            "PropertyChanged.Fody": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.Extensions.DependencyInjection;
+using ProductivityServices.DependencyInjection;
+using ProductivityServices.Factory;
+using ProductivityServices.WPF.Features;
 using System.Windows;
 
 namespace ProductivityServices.WPF
@@ -13,5 +11,17 @@ namespace ProductivityServices.WPF
     /// </summary>
     public partial class App : Application
     {
+        public App()
+        {
+            ServiceCollection services = new ServiceCollection();
+            ConfigureServices(services);
+            DependencyInjectionContext.ServiceProvider = services.BuildServiceProvider();
+        }
+
+        private void ConfigureServices(ServiceCollection services)
+        {
+            services.AddSingleton<ApplicationHostViewModel>();
+            services.AddSingleton<FactoryHostViewModel>();
+        }
     }
 }

@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProductivityServices.DependencyInjection\ProductivityServices.DependencyInjection.csproj" />
+    <ProjectReference Include="..\ProductivityServices.ViewModels\ProductivityServices.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>
