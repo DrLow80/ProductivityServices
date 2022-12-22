@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="ProductivityServices.Factory.Factory.FactoryView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProductivityServices.Factory">
+    <UserControl.Resources>
+        <local:ViewModelLocator x:Key="ViewModelLocator" />
+    </UserControl.Resources>
+    <UserControl.DataContext>
+        <Binding Path="FactoryViewModel"
+                 Source="{StaticResource ViewModelLocator}" />
+    </UserControl.DataContext>
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Name:" />
+            <TextBox Text="{Binding Factory.Name}" />
+        </StackPanel>
+    </Grid>
+</UserControl>

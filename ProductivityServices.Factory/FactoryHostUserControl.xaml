@@ -4,10 +4,23 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ProductivityServices.Factory"
+                          xmlns:views="clr-namespace:ProductivityServices.Factory.Factory"
              mc:Ignorable="d" 
              d:DesignHeight="450"
              d:DesignWidth="800">
-    <Grid>
-        <TextBlock>hi</TextBlock>  
-    </Grid>
+    <UserControl.Resources>
+        <local:ViewModelLocator x:Key="ViewModelLocator" />
+    </UserControl.Resources>
+    <UserControl.DataContext>
+        <Binding Path="FactoryHostViewModel"
+                 Source="{StaticResource ViewModelLocator}" />
+    </UserControl.DataContext>
+    <ContentControl Content="{Binding CurrentViewModel}">
+        <ContentControl.Resources>
+            <DataTemplate DataType="{x:Type views:FactoryViewModel}">
+                <views:FactoryView />
+            </DataTemplate>
+          
+        </ContentControl.Resources>
+    </ContentControl>
 </UserControl>

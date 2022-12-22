@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using ProductivityServices.DependencyInjection;
 using ProductivityServices.Factory;
+using ProductivityServices.Factory.Factory;
 using ProductivityServices.WPF.Features;
 using System.Windows;
 
@@ -22,6 +23,8 @@ namespace ProductivityServices.WPF
         {
             services.AddSingleton<ApplicationHostViewModel>();
             services.AddSingleton<FactoryHostViewModel>();
+            services.AddSingleton<FactoryViewModel>();
+            services.AddSingleton<IFileSystemService, FileSystemService>();
         }
     }
 }

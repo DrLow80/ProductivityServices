@@ -121,8 +121,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "CSharpFunctionalExtensions": "2.37.0",
           "ProductivityServices.DependencyInjection": "1.0.0",
-          "ProductivityServices.ViewModels": "1.0.0"
+          "ProductivityServices.ViewModels": "1.0.0",
+          "PropertyChanged.Fody": "4.1.0"
         },
         "compile": {
           "bin/placeholder/ProductivityServices.Factory.dll": {}

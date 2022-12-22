@@ -11,20 +11,37 @@
         WindowStartupLocation="CenterScreen"
         DataContext="{Binding ApplicationViewModel, Source={StaticResource ViewModelLocator}}">
     <DockPanel>
-        <Menu DockPanel.Dock="Top">
+        <Menu DockPanel.Dock="Top" FocusManager.IsFocusScope="False">
+            <Menu.Resources>
+                <factoryViews:ViewModelLocator x:Key="FactoryFeatureViewModelLocator" />
+            </Menu.Resources>
+            <MenuItem Header="Save" >
+                <d:Interaction.Triggers>
+                    <d:EventTrigger EventName="Click">
+                        <d:InvokeCommandAction
+                            Command="{Binding Source={StaticResource FactoryFeatureViewModelLocator}, Path=FactoryViewModel.SaveCommand}"
+                            />
+                    </d:EventTrigger>
+                </d:Interaction.Triggers>
+            </MenuItem>
+            <MenuItem Header="Open">
+                <d:Interaction.Triggers>
+                    <d:EventTrigger EventName="Click">
+                        <d:InvokeCommandAction
+                            Command="{Binding Source={StaticResource FactoryFeatureViewModelLocator}, Path=FactoryViewModel.OpenCommand}"
+                            />
+                    </d:EventTrigger>
+                </d:Interaction.Triggers>
+            </MenuItem>
             <MenuItem Header="Factory">
-                <MenuItem.Resources>
-                    <factoryViews:ViewModelLocator x:Key="FactoryFeatureViewModelLocator" />
-                </MenuItem.Resources>
-
                 <d:Interaction.Triggers>
                     <d:EventTrigger EventName="Click">
                         <d:InvokeCommandAction
                             Command="{Binding Source={StaticResource ViewModelLocator}, Path=ApplicationViewModel.NavigateCommand}"
                             CommandParameter="{Binding Source={StaticResource FactoryFeatureViewModelLocator}, Path=FactoryHostViewModel}" />
-                        <!--<d:InvokeCommandAction
-                            Command="{Binding Source={StaticResource AdventureFeatureViewModelLocator}, Path=AdventureHostViewModel.NavigateCommand}"
-                            CommandParameter="{Binding Source={StaticResource AdventureFeatureViewModelLocator}, Path=AdventureListViewModel}" />-->
+                        <d:InvokeCommandAction
+                            Command="{Binding Source={StaticResource FactoryFeatureViewModelLocator}, Path=FactoryHostViewModel.NavigateCommand}"
+                            CommandParameter="{Binding Source={StaticResource FactoryFeatureViewModelLocator}, Path=FactoryViewModel}" />
                     </d:EventTrigger>
                 </d:Interaction.Triggers>
 
