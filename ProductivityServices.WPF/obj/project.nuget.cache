@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "GfZby1aCch2UItqkM4xyoT2Z4EIyxu5u6/40rihJaklDr797G9YMEIOCVDH+qvom1Ury2SqkFy1mdCEqvStFxg==",
+  "dgSpecHash": "o0LPiLG7O15YgYhoHeQYBHDv3S49gvcdrQcejdr6osKcZKWcqc0e9W2aPyRSidV6DD8Zz2RW92bk6Y6OtpADiA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.WPF\\ProductivityServices.WPF.csproj",
+  "projectFilePath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.WPF\\ProductivityServices.WPF.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\mmitc\\.nuget\\packages\\csharpfunctionalextensions\\2.37.0\\csharpfunctionalextensions.2.37.0.nupkg.sha512",
-    "C:\\Users\\mmitc\\.nuget\\packages\\fody\\6.6.4\\fody.6.6.4.nupkg.sha512",
-    "C:\\Users\\mmitc\\.nuget\\packages\\jetbrains.annotations\\2022.3.1\\jetbrains.annotations.2022.3.1.nupkg.sha512",
-    "C:\\Users\\mmitc\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
-    "C:\\Users\\mmitc\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
-    "C:\\Users\\mmitc\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
-    "C:\\Users\\mmitc\\.nuget\\packages\\propertychanged.fody\\4.1.0\\propertychanged.fody.4.1.0.nupkg.sha512"
+    "C:\\Users\\Matt\\.nuget\\packages\\csharpfunctionalextensions\\2.37.0\\csharpfunctionalextensions.2.37.0.nupkg.sha512",
+    "C:\\Users\\Matt\\.nuget\\packages\\fody\\6.6.4\\fody.6.6.4.nupkg.sha512",
+    "C:\\Users\\Matt\\.nuget\\packages\\jetbrains.annotations\\2022.3.1\\jetbrains.annotations.2022.3.1.nupkg.sha512",
+    "C:\\Users\\Matt\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\Matt\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Matt\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
+    "C:\\Users\\Matt\\.nuget\\packages\\propertychanged.fody\\4.1.0\\propertychanged.fody.4.1.0.nupkg.sha512"
   ],
   "logs": []
 }

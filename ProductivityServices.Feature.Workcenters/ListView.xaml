@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="ProductivityServices.Feature.Workcenters.ListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:local="clr-namespace:ProductivityServices.Feature.Workcenters"
+             mc:Ignorable="d">
+    <UserControl.Resources>
+        <local:ViewModelLocator x:Key="ViewModelLocator" />
+    </UserControl.Resources>
+    <UserControl.DataContext>
+        <Binding Source="{StaticResource ViewModelLocator}"
+                 Path="ListViewModel" />
+    </UserControl.DataContext>
+    <DockPanel>
+        <ListView ItemsSource="{Binding WorkCenterViewModels}"
+                  SelectedItem="{Binding Source={StaticResource ViewModelLocator}, Path=ListViewModel.SelectedWorkCenterViewModel}"
+                  >
+            <ListView.ItemTemplate>
+                <DataTemplate DataType="{x:Type local:WorkCenterViewModel}">
+                    <TextBlock Text="{Binding WorkCenter.Name}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <d:Interaction.Triggers>
+                <d:EventTrigger EventName="MouseDoubleClick">
+                    <d:InvokeCommandAction
+                        Command="{Binding Source={StaticResource ViewModelLocator}, Path=WorkcentersHostViewModel.NavigateCommand}"
+                        CommandParameter="{Binding Source={StaticResource ViewModelLocator}, Path=ListViewModel.SelectedWorkCenterViewModel}" />
+                </d:EventTrigger>
+            </d:Interaction.Triggers>
+        </ListView>
+    </DockPanel>
+</UserControl>

@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:factoryViews="clr-namespace:ProductivityServices.Factory;assembly=ProductivityServices.Factory"
+        xmlns:workcenters="clr-namespace:ProductivityServices.Feature.Workcenters;assembly=ProductivityServices.Feature.Workcenters"
         mc:Ignorable="d"
         Title="MainWindow"    
         Height="700"
@@ -33,6 +34,23 @@
                     </d:EventTrigger>
                 </d:Interaction.Triggers>
             </MenuItem>
+            <MenuItem Header="Work Centers">
+                <MenuItem.Resources>
+                    <workcenters:ViewModelLocator x:Key="WorkcentersViewModelLocator"/>
+                </MenuItem.Resources>
+                <d:Interaction.Triggers>
+                    <d:EventTrigger EventName="Click">
+                        <d:InvokeCommandAction 
+                            Command="{Binding Source={StaticResource ViewModelLocator}, Path=ApplicationViewModel.NavigateCommand}"
+                            CommandParameter="{Binding Source={StaticResource WorkcentersViewModelLocator},Path=WorkcentersHostViewModel}" />
+                        <d:InvokeCommandAction
+                            Command="{Binding Source={StaticResource WorkcentersViewModelLocator},Path=WorkcentersHostViewModel.NavigateCommand}"
+                            CommandParameter="{Binding Source={StaticResource WorkcentersViewModelLocator},Path=ListViewModel}" />
+                        <d:InvokeCommandAction
+                            Command="{Binding Source={StaticResource WorkcentersViewModelLocator},Path=ListViewModel.LoadCommand}" />
+                    </d:EventTrigger>
+                </d:Interaction.Triggers>
+            </MenuItem>
             <MenuItem Header="Factory">
                 <d:Interaction.Triggers>
                     <d:EventTrigger EventName="Click">
@@ -51,6 +69,9 @@
             <ContentControl.Resources>
                 <DataTemplate DataType="{x:Type factoryViews:FactoryHostViewModel}">
                     <factoryViews:FactoryHostUserControl/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type workcenters:WorkcentersHostViewModel}">
+                    <workcenters:WorkcentersHostView/>
                 </DataTemplate>
             </ContentControl.Resources>
         </ContentControl>

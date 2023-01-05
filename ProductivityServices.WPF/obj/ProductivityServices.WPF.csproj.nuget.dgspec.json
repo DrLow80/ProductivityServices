@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.WPF\\ProductivityServices.WPF.csproj": {}
+    "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.WPF\\ProductivityServices.WPF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj": {
+    "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj",
+        "projectUniqueName": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj",
         "projectName": "ProductivityServices.DependencyInjection",
-        "projectPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj",
-        "packagesPath": "C:\\Users\\mmitc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.DependencyInjection\\obj\\",
+        "projectPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj",
+        "packagesPath": "C:\\Users\\Matt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.DependencyInjection\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\mmitc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Matt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,6 +45,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "CSharpFunctionalExtensions": {
+              "target": "Package",
+              "version": "[2.37.0, )"
+            },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -65,17 +74,21 @@
         }
       }
     },
-    "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.Factory\\ProductivityServices.Factory.csproj": {
+    "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Factory\\ProductivityServices.Factory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.Factory\\ProductivityServices.Factory.csproj",
+        "projectUniqueName": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Factory\\ProductivityServices.Factory.csproj",
         "projectName": "ProductivityServices.Factory",
-        "projectPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.Factory\\ProductivityServices.Factory.csproj",
-        "packagesPath": "C:\\Users\\mmitc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.Factory\\obj\\",
+        "projectPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Factory\\ProductivityServices.Factory.csproj",
+        "packagesPath": "C:\\Users\\Matt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Factory\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\mmitc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Matt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,17 +96,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj": {
-                "projectPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj"
+              "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj": {
+                "projectPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj"
               },
-              "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj": {
-                "projectPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj"
+              "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Foundation.Models\\ProductivityServices.Foundation.Models.csproj": {
+                "projectPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Foundation.Models\\ProductivityServices.Foundation.Models.csproj"
+              },
+              "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj": {
+                "projectPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj"
               }
             }
           }
@@ -111,6 +128,16 @@
             "CSharpFunctionalExtensions": {
               "target": "Package",
               "version": "[2.37.0, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.6.4, )"
+            },
+            "Microsoft.Xaml.Behaviors.Wpf": {
+              "target": "Package",
+              "version": "[1.1.39, )"
             },
             "PropertyChanged.Fody": {
               "target": "Package",
@@ -140,17 +167,21 @@
         }
       }
     },
-    "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj": {
+    "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Feature.Workcenters\\ProductivityServices.Feature.Workcenters.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj",
-        "projectName": "ProductivityServices.ViewModels",
-        "projectPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj",
-        "packagesPath": "C:\\Users\\mmitc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.ViewModels\\obj\\",
+        "projectUniqueName": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Feature.Workcenters\\ProductivityServices.Feature.Workcenters.csproj",
+        "projectName": "ProductivityServices.Feature.Workcenters",
+        "projectPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Feature.Workcenters\\ProductivityServices.Feature.Workcenters.csproj",
+        "packagesPath": "C:\\Users\\Matt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Feature.Workcenters\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\mmitc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Matt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -158,6 +189,170 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj": {
+                "projectPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj"
+              },
+              "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Foundation.Models\\ProductivityServices.Foundation.Models.csproj": {
+                "projectPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Foundation.Models\\ProductivityServices.Foundation.Models.csproj"
+              },
+              "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj": {
+                "projectPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "CSharpFunctionalExtensions": {
+              "target": "Package",
+              "version": "[2.37.0, )"
+            },
+            "Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.6.4, )"
+            },
+            "Microsoft.Xaml.Behaviors.Wpf": {
+              "target": "Package",
+              "version": "[1.1.39, )"
+            },
+            "PropertyChanged.Fody": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Foundation.Models\\ProductivityServices.Foundation.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Foundation.Models\\ProductivityServices.Foundation.Models.csproj",
+        "projectName": "ProductivityServices.Foundation.Models",
+        "projectPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Foundation.Models\\ProductivityServices.Foundation.Models.csproj",
+        "packagesPath": "C:\\Users\\Matt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Foundation.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Matt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "CSharpFunctionalExtensions": {
+              "target": "Package",
+              "version": "[2.37.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj",
+        "projectName": "ProductivityServices.ViewModels",
+        "projectPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\Matt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.ViewModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Matt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -176,6 +371,10 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "CSharpFunctionalExtensions": {
+              "target": "Package",
+              "version": "[2.37.0, )"
+            },
             "JetBrains.Annotations": {
               "target": "Package",
               "version": "[2022.3.1, )"
@@ -208,17 +407,21 @@
         }
       }
     },
-    "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.WPF\\ProductivityServices.WPF.csproj": {
+    "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.WPF\\ProductivityServices.WPF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.WPF\\ProductivityServices.WPF.csproj",
+        "projectUniqueName": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.WPF\\ProductivityServices.WPF.csproj",
         "projectName": "ProductivityServices.WPF",
-        "projectPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.WPF\\ProductivityServices.WPF.csproj",
-        "packagesPath": "C:\\Users\\mmitc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.WPF\\obj\\",
+        "projectPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.WPF\\ProductivityServices.WPF.csproj",
+        "packagesPath": "C:\\Users\\Matt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.WPF\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\mmitc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Matt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -226,20 +429,27 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj": {
-                "projectPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj"
+              "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj": {
+                "projectPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.DependencyInjection\\ProductivityServices.DependencyInjection.csproj"
               },
-              "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.Factory\\ProductivityServices.Factory.csproj": {
-                "projectPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.Factory\\ProductivityServices.Factory.csproj"
+              "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Factory\\ProductivityServices.Factory.csproj": {
+                "projectPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Factory\\ProductivityServices.Factory.csproj"
               },
-              "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj": {
-                "projectPath": "C:\\Users\\mmitc\\source\\repos\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj"
+              "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Feature.Workcenters\\ProductivityServices.Feature.Workcenters.csproj": {
+                "projectPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Feature.Workcenters\\ProductivityServices.Feature.Workcenters.csproj"
+              },
+              "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Foundation.Models\\ProductivityServices.Foundation.Models.csproj": {
+                "projectPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.Foundation.Models\\ProductivityServices.Foundation.Models.csproj"
+              },
+              "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj": {
+                "projectPath": "C:\\Users\\Matt\\Documents\\GitHub\\ProductivityServices\\ProductivityServices.ViewModels\\ProductivityServices.ViewModels.csproj"
               }
             }
           }

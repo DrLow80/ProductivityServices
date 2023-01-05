@@ -1,4 +1,5 @@
-﻿using ProductivityServices.ViewModels;
+﻿using CSharpFunctionalExtensions;
+using ProductivityServices.ViewModels;
 using System;
 
 namespace ProductivityServices.Factory.Factory
@@ -7,11 +8,11 @@ namespace ProductivityServices.Factory.Factory
     {
         public Factory Factory { get; set; }
 
-        private IFileSystemService _fileSystemService;
+        private IFactoryService _factoryService;
 
-        public FactoryViewModel(IFileSystemService fileSystemService)
+        public FactoryViewModel(IFactoryService factoryService)
         {
-            _fileSystemService = fileSystemService ?? throw new ArgumentNullException(nameof(fileSystemService));
+            _factoryService = factoryService ?? throw new ArgumentNullException(nameof(factoryService));
             Factory = new Factory();
         }
 
@@ -19,14 +20,14 @@ namespace ProductivityServices.Factory.Factory
 
         private void OnSave(object obj)
         {
-            _fileSystemService.Save(Factory);
+           Result result= _factoryService.Save();
         }
 
         public RelayCommand OpenCommand => new RelayCommand(OnOpen);
 
         private void OnOpen(object obj)
         {
-            Factory = _fileSystemService.Load().Value;
+            Result result= _factoryService.Load();
         }
     }
 }

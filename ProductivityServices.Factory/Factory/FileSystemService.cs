@@ -1,12 +1,13 @@
 ﻿using CSharpFunctionalExtensions;
 using Microsoft.Win32;
+using ProductivityServices.Foundation.Models;
 using System.Text.Json;
 
 namespace ProductivityServices.Factory.Factory
 {
     public class FileSystemService : IFileSystemService
     {
-        public Result<Factory> Load()
+        public Result<Project> Load()
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
 
@@ -16,15 +17,15 @@ namespace ProductivityServices.Factory.Factory
             {
                 var content = System.IO.File.ReadAllText(openFileDialog.FileName);
 
-                return JsonSerializer.Deserialize<Factory>(content);
+                return JsonSerializer.Deserialize<Project>(content);
             }
 
-            return Result.Failure<Factory>("FAiL");
+            return Result.Failure<Project>("Fail");
         }
 
-        public Result Save(Factory factory)
+        public Result Save(Project project)
         {
-            var content = JsonSerializer.Serialize(factory);
+            var content = JsonSerializer.Serialize(project);
 
             SaveFileDialog saveFileDialog = new SaveFileDialog();
 
@@ -39,3 +40,4 @@ namespace ProductivityServices.Factory.Factory
         }
     }
 }
+

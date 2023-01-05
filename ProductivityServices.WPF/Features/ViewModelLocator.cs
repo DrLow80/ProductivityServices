@@ -5,12 +5,6 @@ namespace ProductivityServices.WPF.Features
 {
     public class ViewModelLocator
     {
-        public static ApplicationHostViewModel ApplicationViewModel
-        {
-            get
-            {
-                return DependencyInjectionContext.ServiceProvider.GetService<ApplicationHostViewModel>();
-            }
-        }
+        public static ApplicationHostViewModel ApplicationViewModel => DependencyInjectionContext.Get<ApplicationHostViewModel>();
     }
 }

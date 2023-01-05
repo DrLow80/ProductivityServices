@@ -1,11 +1,12 @@
 ﻿using CSharpFunctionalExtensions;
+using ProductivityServices.Foundation.Models;
 
 namespace ProductivityServices.Factory.Factory
 {
     public interface IFileSystemService
     {
-        Result Save(Factory factory);
+        Result Save(Project project);
 
-        Result<Factory> Load();
+        Result<Project> Load();
     }
 }

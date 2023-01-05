@@ -1,7 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using ProductivityServices.DependencyInjection;
-using ProductivityServices.Factory;
-using ProductivityServices.Factory.Factory;
 using ProductivityServices.WPF.Features;
 using System.Windows;
 
@@ -16,15 +14,17 @@ namespace ProductivityServices.WPF
         {
             ServiceCollection services = new ServiceCollection();
             ConfigureServices(services);
-            DependencyInjectionContext.ServiceProvider = services.BuildServiceProvider();
+            DependencyInjectionContext.Update(services.BuildServiceProvider());
         }
 
         private void ConfigureServices(ServiceCollection services)
         {
+            
+            ProductivityServices.Foundation.Models.Services.ConfigureServices(services);
             services.AddSingleton<ApplicationHostViewModel>();
-            services.AddSingleton<FactoryHostViewModel>();
-            services.AddSingleton<FactoryViewModel>();
-            services.AddSingleton<IFileSystemService, FileSystemService>();
+
+            Factory.ViewModelLocator.ConfigureServices(services);
+            Feature.Workcenters.ViewModelLocator.ConfigureServices(services);
         }
     }
 }

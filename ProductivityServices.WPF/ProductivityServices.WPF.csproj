@@ -21,6 +21,8 @@
   <ItemGroup>
     <ProjectReference Include="..\ProductivityServices.DependencyInjection\ProductivityServices.DependencyInjection.csproj" />
     <ProjectReference Include="..\ProductivityServices.Factory\ProductivityServices.Factory.csproj" />
+    <ProjectReference Include="..\ProductivityServices.Feature.Workcenters\ProductivityServices.Feature.Workcenters.csproj" />
+    <ProjectReference Include="..\ProductivityServices.Foundation.Models\ProductivityServices.Foundation.Models.csproj" />
     <ProjectReference Include="..\ProductivityServices.ViewModels\ProductivityServices.ViewModels.csproj" />
   </ItemGroup>
 
