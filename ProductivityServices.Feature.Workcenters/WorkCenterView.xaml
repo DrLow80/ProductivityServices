@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ProductivityServices.Feature.Workcenters"
+             xmlns:model="clr-namespace:ProductivityServices.Foundation.Models;assembly=ProductivityServices.Foundation.Models"
              mc:Ignorable="d">
     <UserControl.Resources>
         <local:ViewModelLocator x:Key="ViewModelLocator" />
@@ -16,10 +17,27 @@
             <TextBlock Text="Workcenter"/>
             <Grid>
                 <StackPanel>
-                    <TextBlock Text="Name:"/>
+                    <TextBlock Text="Name"/>
                     <TextBox Text="{Binding WorkCenter.Name}"/>
                 </StackPanel>
             </Grid>
+            <TextBlock Text="Stations"/>
+            <ListView ItemsSource="{Binding Stations}">
+                <ListView.Resources>
+                    <DataTemplate DataType="{x:Type model:Station }">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Name"/>
+                            <TextBox Text="{Binding Name}"/>
+                            <TextBlock Text="Operation"/>
+                            <TextBox Text="{Binding Operation}"/>
+                        </StackPanel>
+                            
+                    </DataTemplate>
+                </ListView.Resources>
+            </ListView>
+            <Button Command="{Binding AddStationCommand}">
+                <TextBlock Text="Add"/>
+            </Button>
         </StackPanel>
     </Grid>
 </UserControl>

@@ -8,18 +8,7 @@ namespace ProductivityServices.Foundation.Models
 
         public ModelsService()
         {
-            Project = new Project();
-            Project.Name= Guid.NewGuid().ToString();    
-            Project.WorkCenters = new[] {
-                new WorkCenter() {
-                    Name=Guid.NewGuid().ToString()
-                },
-                 new WorkCenter() {
-                    Name=Guid.NewGuid().ToString()
-                }, new WorkCenter() {
-                    Name=Guid.NewGuid().ToString()
-                }
-            };
+            Project = RandomProject();
         }
 
         public Maybe<IEnumerable<WorkCenter>> ListWorkCenters() => Maybe.From(Project?.WorkCenters);
@@ -29,6 +18,50 @@ namespace ProductivityServices.Foundation.Models
             Project = project;
 
             return Result.Success();
+        }
+
+        private static string RandomString()
+        {
+            return Guid.NewGuid().ToString();
+        }
+
+        private static Station RandomStation()
+        {
+            return new Station()
+            {
+                Operation = RandomString(),
+                Name = RandomString(),
+            };
+        }
+
+        private static WorkCenter RandomWorkCenter()
+        {
+            return new WorkCenter()
+            {
+                Name = RandomString(),
+                Stations = RandomItems(RandomStation, 10)
+            };
+        }
+
+        private static Project RandomProject()
+        {
+            return new Project()
+            {
+                Name = RandomString(),
+                WorkCenters = RandomItems(RandomWorkCenter, 10)
+            };
+        }
+
+        private static IEnumerable<T> RandomItems<T>(Func<T> item, int amount)
+        {
+            List<T> items = new List<T>();
+
+            for (int i = 0; i < amount; i++)
+            {
+                items.Add(item());
+            }
+
+            return items;
         }
     }
 }
